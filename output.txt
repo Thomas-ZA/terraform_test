@@ -1,0 +1,41 @@
+PING pubelb-28680555.af-south-1.elb.amazonaws.com (13.245.44.93) 56(84) bytes of data.
+
+--- pubelb-28680555.af-south-1.elb.amazonaws.com ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+[0m[1maws_iam_policy.ssm_policy: Refreshing state... [id=arn:aws:iam::507592092345:policy/ssm-policy][0m
+[0m[1maws_vpc.mainvpc: Refreshing state... [id=vpc-09b7a331a38889208][0m
+[0m[1maws_db_instance.default: Refreshing state... [id=terraform-20211115170844112300000002][0m
+[0m[1maws_iam_role.ssm_role: Refreshing state... [id=SSM_role][0m
+[0m[1maws_route53_zone.private: Refreshing state... [id=Z03878231HKUW5DKMDSKW][0m
+[0m[1maws_internet_gateway.MainGW: Refreshing state... [id=igw-0782a278bd16441cc][0m
+[0m[1maws_subnet.SubnetPrivate: Refreshing state... [id=subnet-0c48a9ef2d9212dd5][0m
+[0m[1maws_subnet.SubnetPublic: Refreshing state... [id=subnet-04ebf0e4973f2d512][0m
+[0m[1maws_subnet.SubnetUnused: Refreshing state... [id=subnet-005b1361de93f3365][0m
+[0m[1maws_security_group.PubSubnetAccess: Refreshing state... [id=sg-02a9e5c35ccbcb327][0m
+[0m[1maws_route_table.MainRoute: Refreshing state... [id=rtb-0be2d7b5d5dd3f92b][0m
+[0m[1maws_route_table_association.PubRouteAssoc: Refreshing state... [id=rtbassoc-06ae801bfa7520414][0m
+[0m[1mmodule.elb_http.module.elb.aws_elb.this[0]: Refreshing state... [id=pubELB][0m
+[0m[1maws_iam_role_policy_attachment.ssm_role: Refreshing state... [id=SSM_role-20211115150601410700000001][0m
+[0m[1maws_iam_instance_profile.web1: Refreshing state... [id=web1_host_role][0m
+[0m[1maws_instance.web1: Refreshing state... [id=i-0ed33eabab215d17f][0m
+[0m[1mmodule.elb_http.module.elb_attachment.aws_elb_attachment.this[0]: Refreshing state... [id=pubELB-20211115174544524200000001][0m
+
+[0m[1m[32mNo changes.[0m[1m Your infrastructure matches the configuration.[0m
+
+[0mTerraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.
+[0m[1m[32m
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+[0m[0m[1m[32m
+Outputs:
+
+[0mDB_Pass = "DbPass1234"
+DB_User = "dbrootuser"
+ELB_dns_name = "pubELB-28680555.af-south-1.elb.amazonaws.com"
+MySQL_URL = "terraform-20211115170844112300000002.cwawmnuzbzft.af-south-1.rds.amazonaws.com:3306"
+PING pubelb-28680555.af-south-1.elb.amazonaws.com (13.244.79.215) 56(84) bytes of data.
+
+--- pubelb-28680555.af-south-1.elb.amazonaws.com ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
